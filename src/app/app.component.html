@@ -1,8 +1,2 @@
-<app-header (login)="onLogin()"/>
-@if (loginPage())
-{
-  <app-login (registerPage)="onRegister()"/>
-}
-@else if (registerPage()) {
-  <app-register />
-}
+<app-header />
+<router-outlet />

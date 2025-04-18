@@ -1,35 +1,15 @@
-<header class="header">
-        <!-- Logo -->
-        <a href="#" class="logo">YourLogo</a>
-
-        <!-- Mobile Menu Toggle -->
-        <button class="menu-toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-        </button>
-
-        <!-- Navigation Menu -->
-        <nav class="nav-menu">
-            <!-- Navigation Links -->
-            <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="nav-actions">
-                <button class="search-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </button>
-                <button class="login-btn" (click)="onLogin()">Login</button>
-            </div>
-        </nav>
-    </header>
+<header>
+  <nav>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about">About</a></li>
+    </ul>
+    <a class="name" routerLink="/">Mohamed Hamdy</a>
+    <ul>
+      <li>
+        <a routerLink="/contact"><i class="bi bi-linkedin"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- <div class="menu-toggle">☰</div> -->
+</header>
