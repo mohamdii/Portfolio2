@@ -1,4 +1,21 @@
-<video controls autoplay muted loop width="100%"> 
-  <source src="assets/videocode.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+<div class="video-container">
+  <video autoplay muted loop>
+    <source src="videocode.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="text-overlay">
+    <h2>ABOUT</h2>
+    <p>Welcome to my portfolio! I'm a passionate web developer who loves building dynamic, user-friendly applications. Always eager to learn and grow, I'm excited to share my work with you.</p>
+  </div>
+</div>
+<table border="1">
+  @for (item of experiences(); track item) {
+  <tr>
+    @for (key of keys; track key) {
+    <th>Experience</th>
+    <th>{{item[key]}}</th>
+    }
+  </tr>
+}
+</table>
