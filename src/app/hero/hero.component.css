@@ -84,3 +84,11 @@ h1 {
 .circle-one:hover {
   animation: reverse 10s linear infinite;
 }
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+}

@@ -14,4 +14,8 @@
   </div>
 </div>
 <h1>Work Experience</h1>
-<app-experience-card></app-experience-card>
+<div class="card-container">
+  @for(experience of experiences; track experience.id) { 
+  <app-experience-card [experience]="experience"/>
+  }
+</div>

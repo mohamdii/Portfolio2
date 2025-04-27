@@ -1,6 +1,14 @@
 <div class="experience-card">
   <div class="experience-card-header">
-    <h2 class="position">{{ position() }}</h2>
-    <p class="experience-card-subtitle">My Work Experience</p>
+    <h2 class="position">{{ experience.jobTitle }}</h2>
+    <p class="company">{{experience.companyId}}</p>
+    <div class="container">
+      <p class="date">{{ experience.startDate | date: 'shortDate' }} - {{ experience.endDate | date: 'shortDate' }}</p>
+      <ul class="experience">
+        <li>loremfassklrfjalsk lakfnlasknf</li>
+        <li>lolsadfa;lsf alsf;asoi s;aspdfsla;fasoirir</li>
+        <li>lsodls</li>
+      </ul>
+    </div>
   </div>
 </div>
